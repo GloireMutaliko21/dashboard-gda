@@ -1,11 +1,20 @@
-header{
-    height: 100px;
-    width: 100%;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
+body{
+    display: grid;
+    height: 100vh;
+    grid-template: 15% 85%/ 20% 80%;
+    grid-template-areas: 
+    "div header"
+    "div main";
 }
-nav ul{
-    display: flex;
-    justify-content: flex-end;
+header{
+    background: green;
+    grid-area: header;
+}
+div{
+    background: rgb(22, 67, 189);
+    grid-area: div;
+}
+main{
+    background: cornflowerblue;
+    grid-area: main;
 }
