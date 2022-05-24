@@ -23,20 +23,13 @@ header{
     grid-area: div;
 }
 main{
+    display: grid;
     background: cornflowerblue;
     grid-area: main;
-
-    background: rgb(98, 158, 211);
-    display: flex;
-    justify-content: space-between;
 }
-nav ul{
-    display: flex;
-    justify-content: flex-end;
-    float: right;
-}
-li{
-    text-decoration: none;
-    margin: 20px;
-    
+.grid-itms {
+    width: 35%;
+    height: 20vh;
+    background: rgb(104, 1, 1);
+    border: 2px solide rgb(201, 192, 192);
 }
