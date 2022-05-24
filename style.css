@@ -1,16 +1,23 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 body{
     display: grid;
     height: 100vh;
-    grid-template: 15% 85%/ 20% 80%;
+    grid-template: 20% 85%/ 20% 80%;
     grid-template-areas: 
     "div header"
     "div main";
 }
 header{
-    background: green;
+    background: white;
     grid-area: header;
+    padding: 20px 30px;
 }
-div{
+.sideMenu{
     background: rgb(22, 67, 189);
     grid-area: div;
 }
