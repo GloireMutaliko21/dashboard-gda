@@ -13,17 +13,67 @@
 <body>
     <header>
         <div class="search">
-            <span class="mdi mdi-magnify" style="font-size: 20px; "></span>
-            <input type="text" id="rechercher">
+            <div class="rech">
+                <span class="mdi mdi-magnify" style="font-size: 20px; "></span>
+                <input type="text" id="rechercher">
+            </div>
             <div class="notif_profil">
-                <span class="mdi mdi-bell-ring-outline" style="font-size: 20px; "></span>
-                <img src="assets/dev wallpaper.jpg" alt="">
+                <div><span class="mdi mdi-bell-ring-outline" style="font-size: 20px; " id="notification"></span></div>
+                <div><img src="assets/profile.webp" alt="" id="profil"></div>
+                <div>
+                    <h4 id="name">Gloire Mutaliko</h4>
+                </div>
+            </div>
+        </div>
+        <div class="commandes">
+            <div class="info">
+                <div><img src="assets/profile.webp" alt="" id="profil2"></div>
+                <div>
+                    <p>Hi there,<h4 class="">Gloire Mutaliko</h4></p>
+                </div>
+            </div>
+            <div class="boutons">
+                <input type="submit" value="New">
+                <input type="submit" value="Upload">
+                <input type="submit" value="Share">
             </div>
         </div>
         <div class=""></div>
     </header>
-    <div class="sideMenu">Sidebar</div>
-    <main>Content</main>
+    <div class="sidebar">
+        <div class="side-dash">
+            <span class="mdi mdi-view-dashboard"></span><h3>Dashboard</h3>
+        </div>
+        <div class="sidebar-menu">
+            <span class="mdi mdi-home"></span><p>Home</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="mdi mdi-card-account-details-outline"></span><p>Profile</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="mdi mdi-message-reply"></span><p>Message</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="mdi mdi-clock-time-three"></span><p>History</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="mdi mdi-file-multiple"></span><p>Tasks</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="mdi mdi-account-group"></span><p>Communities</p>
+        </div>
+        <div class="sidebar-menu" id="setting">
+            <span class="mdi mdi-cog"></span><p>Settings</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="mdi mdi-help-box"></span><p>Support</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="mdi mdi-shield-check"></span><p>Privacy</p>
+        </div>
+        
+    </div>
+    <main></main>
 </body>
 
 </html>

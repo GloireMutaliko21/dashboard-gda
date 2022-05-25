@@ -1,27 +1,151 @@
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     display: grid;
-    height: 100vh;
-    grid-template: 20% 85%/ 20% 80%;
-    grid-template-areas: 
-    "div header"
-    "div main";
+    grid-template: 30% 70%/ 17% 83%;
+    grid-template-areas:
+        "div header"
+        "div main";
 }
-header{
+
+header {
+    display: grid;
     background: white;
     grid-area: header;
-    padding: 20px 30px;
+    margin: 10px 30px;
 }
-.sideMenu{
-    background: rgb(22, 67, 189);
+
+#profil {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    grid-area: photo;
+}
+
+.search,.commandes {
+    display: grid;
+    grid-template-columns: 60% 15% 25%;
+    grid-template-areas:
+        "rech vide notif_profil";
+    align-items: center;
+}
+
+.rech {
+    display: grid;
+    grid-template-columns: 7% 1fr;
+    grid-area: rech;
+
+}
+
+#rechercher {
+    background: #e2e8f0;
+    margin-top: 0px;
+    width: 500px;
+    height: 25px;
+    border: 0px;
+    border-radius: 19px;
+}
+
+.notif_profil {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: notif_profil;
+}
+
+#notification {
+    grid-area: notif;
+}
+
+#name {
+    grid-area: nom;
+}
+
+.commandes {
+    margin-top: 20px;
+}
+.info{
+    grid-area: rech;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img p"
+    "img h4";
+    align-items: center;
+
+}
+.info h4{
+    margin-top: -10px;
+}
+#profil2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.boutons{
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: notif_profil;
+}
+.boutons > input{
+    background-color: #3b82f6;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border: 0px;
+    border-radius: 19px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    color: #3b82f6;
+    background-color: rgb(208, 255, 237);
+    font-weight: bold;
+}
+.sidebar {
+    background: #3b82f6;
+    font-weight: bold;
+    color: #fff;
     grid-area: div;
 }
-main{
-    background: cornflowerblue;
+.side-dash,
+.sidebar-menu{
+    margin: -10px;
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.side-dash{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.side-dash span{
+    font-size: 32px;
+    padding-right: 10px;
+}
+.sidebar-menu > span{
+    padding-right: 20px;
+}
+.sidebar-menu:hover,
+.side-dash:hover{
+    background-color: #fff;
+    color: #2d2b98;
+    border-radius: 50px;
+}
+#setting{
+    margin-top: 30px;
+}
+main {
+    background: #cbd5e1;
     grid-area: main;
 }
