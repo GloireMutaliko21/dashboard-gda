@@ -15,7 +15,7 @@ body {
 
 header {
     display: grid;
-    background: white;
+    background: #fff;
     grid-area: header;
     margin: 10px 30px;
 }
@@ -120,7 +120,7 @@ input[type=submit]:hover {
 .sidebar {
     position: fixed;
     width: 40vh;
-    background: #3b82f6;
+    background: #0369a1;
     font-weight: bold;
     color: #fff;
     grid-area: div;
@@ -176,15 +176,14 @@ main {
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.05fr repeat(3, 1fr);
+    grid-template-rows: 60px 30% 30% 30%;
     grid-column-gap: 20px;
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.title {
+/* .title {
     grid-area: 1 / 1 / 2 / 3;
-    /* margin-bottom: -90px; */
-}
+} */
 .card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -236,7 +235,7 @@ main {
 }
 .card-trending{
     display: flex;
-    /* flex-direction: column; */
+    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 6px;
     padding: 20px;
@@ -259,5 +258,5 @@ main {
 }
 .profil p,
 .profil h4{
-    margin-left: -50px;
+    /* margin-left: -50px; */
 } 
