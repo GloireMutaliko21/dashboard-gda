@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+    font-family: 'Relaway', sans-serif;
+}
 html,
 body {
     width: 100%;
@@ -253,10 +257,13 @@ main {
     align-items: center;
     justify-content: space-around;
 }
-.profil h4 {
-    margin-top: -20px;
+.desc, .profil p{
+    color: gray;
 }
-.profil p,
-.profil h4{
-    /* margin-left: -50px; */
+.profil p{
+    margin-top: -20px;
 } 
+
+.profil p, .profil h5{
+    padding-left: 10px;
+}
