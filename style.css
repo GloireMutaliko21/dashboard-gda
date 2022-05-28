@@ -124,7 +124,7 @@ input[type=submit]:hover {
 
 .sidebar {
     position: fixed;
-    width: 40vh;
+    width: 17vw;
     background: #0369a1;
     font-weight: bold;
     color: #fff;
@@ -189,9 +189,6 @@ main {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-/* .title {
-    grid-area: 1 / 1 / 2 / 3;
-} */
 .card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -270,4 +267,95 @@ main {
 
 .profil p, .profil h5{
     padding-left: 10px;
+}
+
+@media screen and (max-width: 920px) {
+    body{
+        grid-template-rows: 10% 90%;
+    }
+    #name,
+    .welcome{
+        display: none;
+    }
+    #rechercher{
+        width: 50%;
+    }
+    .sidebar-menu {
+        align-items: flex-start;
+    }
+    .sidebar-menu p, 
+    .side-dash h3{
+        display: none;
+    }
+    .sidebar-menu span{
+        padding: 20px 0px;
+    }
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "projects"
+        "annoucements";
+        gap: 10px;
+    }
+    .projects{
+        grid-area: projects;
+        grid-row-gap: 10px;
+    }
+    .annoucements{
+        grid-area: annoucements;
+        
+    }
+
+}
+@media screen and (max-width: 720px) {
+    body{
+        grid-template-rows: 6% 1fr;
+    }
+    #name,
+    .welcome,
+    #profil2{
+        display: none;
+    }
+    .boutons{
+        margin-top: 2px;
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "titre"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5"
+        "p6";
+        grid-area: projects;
+        grid-row-gap: 5px;
+    }
+    .project1{
+        grid-area: p1;
+    }
+    .project2{
+        grid-area: p2;
+    }
+    .project3{
+        grid-area: p3;
+    }
+    .project4{
+        grid-area: p4;
+    }
+    .project5{
+        grid-area: p5;
+    }
+    .project6{
+        grid-area: p6;
+    }
+    .annoucements{
+        grid-area: annoucements;
+        
+    }
+
 }
